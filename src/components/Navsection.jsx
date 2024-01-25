@@ -22,7 +22,7 @@ const Navsection = () => {
                         <nav className=" max-w-[1220px] px-3 mx-auto">
                                 <div className="flex justify-between items-center pt-[15px] px-3 ">
                                         <div className=" flex items-center gap-2 sm:gap-[65px]">
-                                                <img src={navlogo} alt="#" />
+                                                <img className=" cursor-pointer" src={navlogo} alt="#" />
                                                 <p className=" after:duration-500 after:w-[72px] cursor-pointer after:absolute relative after:right-0  after:-bottom-2  after:h-[2px] after:bg-[#B00000]  after:left-[8%] after:rounded-[10px] font-poppins text-[15px] font-semibold text-black leading-normal">Our Services</p>
                                         </div>
                                         <div className="flex items-center  gap-[10px] sm:gap-[40px]">
@@ -59,7 +59,7 @@ const Navsection = () => {
                                                         <a href="" className=" flex items-center gap-1 cursor-pointer  ">
                                                                 <Phoneicon />
                                                                 <p className="font-poppins text-[16px] font-semibold text-black leading-normal">
-                                                                        +2349067322844
+                                                                        <a href="tel:2349067322844">+2349067322844</a>
                                                                 </p>
                                                         </a>
                                                 </Link>
@@ -73,7 +73,7 @@ const Navsection = () => {
                                                         <div className=" flex items-center gap-1 cursor-pointer">
                                                                 <Phoneicon />
                                                                 <p className="font-poppins text-[16px] font-semibold text-black leading-normal">
-                                                                        +2349067322844
+                                                                        <a href="tel:2349067322844">+2349067322844</a>
                                                                 </p>
                                                         </div>
                                                 </div>
