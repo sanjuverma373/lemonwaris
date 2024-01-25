@@ -27,42 +27,18 @@ const Navsection = () => {
                                         </div>
                                         <div className="flex items-center  gap-[10px] sm:gap-[40px]">
                                                 <ul className={` ${first ? "left-0" : "left-[-100%]"} flex items-center  gap-[55px] duration-300 mobileview2  max-lg:justify-center max-lg:flex-col max-lg:text-white max-lg:w-full max-lg:h-full  max-lg:fixed max-lg:top-0 max-lg:z-20 max-lg:bg-[#F6E1E1]`}>
-                                                        <Link to="/">
-                                                                <a
-                                                                        onClick={() => setfirst(false)}
-                                                                        href="#about"
-                                                                        className=' cursor-pointer transition after:duration-500 after:w-0 hover:after:w-full hover:after:left-0 after:absolute relative after:right-0  after:-bottom-2  after:h-[2px] after:bg-[#B00000] font-poppins text-[15px] font-semibold text-black leading-normal'
-                                                                >
-                                                                        About
+                                                        <Link to="/" onClick={() => setfirst(false)} className=' cursor-pointer transition after:duration-500 after:w-0 hover:after:w-full hover:after:left-0 after:absolute relative after:right-0  after:-bottom-2  after:h-[2px] after:bg-[#B00000] font-poppins text-[15px] font-semibold text-black leading-normal'>About</Link>
+                                                        <Link to="/about" onClick={() => setfirst(false)} className='cursor-pointer transition after:duration-500 after:w-0 hover:after:w-full hover:after:left-0 after:absolute relative after:right-0 after:-bottom-2 after:h-[2px] after:bg-[#B00000] font-poppins text-[15px] font-semibold text-black leading-normal'> Blog&News</Link>
+                                                        <Link to="/shop" onClick={() => setfirst(false)} className='cursor-pointer transition after:duration-500 after:w-0 hover:after:w-full hover:after:left-0 after:absolute relative after:right-0 after:-bottom-2 after:h-[2px] after:bg-[#B00000] font-poppins text-[15px] font-semibold text-black leading-normal'>Contact</Link>
+                                                        <Link className=" font-poppins text-[15px] font-semibold text-black leading-normal after:duration-500 after:w-0 hover:after:w-full hover:after:left-0 after:absolute relative after:right-0 after:-bottom-2 after:h-[2px] after:bg-[#B00000] block md:hidden">Account</Link>
+                                                        <Link className=" block sm:hidden">
+                                                                <a href="" className=" flex items-center gap-1 cursor-pointer  ">
+                                                                        <Phoneicon />
+                                                                        <p className="font-poppins text-[16px] font-semibold text-black leading-normal">
+                                                                                <a href="tel:2349067322844">+2349067322844</a>
+                                                                        </p>
                                                                 </a>
                                                         </Link>
-                                                        <Link to="/about">
-                                                                <a
-                                                                        onClick={() => setfirst(false)}
-                                                                        href="#blog"
-                                                                        className='cursor-pointer transition after:duration-500 after:w-0 hover:after:w-full hover:after:left-0 after:absolute relative after:right-0 after:-bottom-2 after:h-[2px] after:bg-[#B00000] font-poppins text-[15px] font-semibold text-black leading-normal'
-                                                                >
-                                                                        Blog&News
-                                                                </a>
-                                                        </Link>
-                                                        <Link to="/shop" >
-                                                                <a
-                                                                        onClick={() => setfirst(false)}
-                                                                        href="#contact"
-                                                                        className='cursor-pointer transition after:duration-500 after:w-0 hover:after:w-full hover:after:left-0 after:absolute relative after:right-0 after:-bottom-2 after:h-[2px] after:bg-[#B00000] font-poppins text-[15px] font-semibold text-black leading-normal'
-                                                                >
-                                                                        Contact
-                                                                </a>
-                                                        </Link>
-                                                        <a href="" className=" font-poppins text-[15px] font-semibold text-black leading-normal after:duration-500 after:w-0 hover:after:w-full hover:after:left-0 after:absolute relative after:right-0 after:-bottom-2 after:h-[2px] after:bg-[#B00000] block md:hidden">Account</a>
-                                                <Link className=" block sm:hidden">
-                                                        <a href="" className=" flex items-center gap-1 cursor-pointer  ">
-                                                                <Phoneicon />
-                                                                <p className="font-poppins text-[16px] font-semibold text-black leading-normal">
-                                                                        <a href="tel:2349067322844">+2349067322844</a>
-                                                                </p>
-                                                        </a>
-                                                </Link>
 
 
                                                 </ul>

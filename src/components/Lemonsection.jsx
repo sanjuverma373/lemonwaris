@@ -25,9 +25,9 @@ const Lemonsection = () => {
         ]
         const Packagedata = packag.map((data, index) => (
 
-                <div className=' flex items-center justify-center'>
+                <div key={index} className=' flex items-center justify-center'>
                         {first === "tab1" &&
-                                <div key={index} className=' max-w-[299px] rounded-[15px] border-[1.5px] border-solid border-[#C4C4C4] shadow-[0_0_4px_0_rgba(0,0,0,0.25)_inset] pt-[24px] sm:pt-[34px] px-[24px] sm:px-[34px] pb-[24px] sm:pb-[48px]'>
+                                <div  className=' max-w-[299px] rounded-[15px] border-[1.5px] border-solid border-[#C4C4C4] shadow-[0_0_4px_0_rgba(0,0,0,0.25)_inset] pt-[24px] sm:pt-[34px] px-[24px] sm:px-[34px] pb-[24px] sm:pb-[48px]'>
                                         <h2 className=' text-center lg:text-start text-black text-[24px] sm:text-[28px] font-semibold leading-[25px] font-poppins'>{data.h2}</h2>
                                         <p className=' text-center lg:text-start text-black sm:leading-[18px] text-[12px] max-w-[237px] font-normal font-poppins pt-[11px] pb-[28px] '>with all your customers via all conversation channels in one central dashboard.</p>
                                         <h3 className=' text-center lg:text-start text-black text-[36px] sm:text-[42px] font-semibold leading-[32px] font-poppins pb-[11px]'>{data.doler}</h3>
